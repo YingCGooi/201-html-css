@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Position Relative</title>
+    <meta charset="UTF-8" />
+    <style>
+    figure {
+      display: block;
+    }
+    .box-set {
+      background: #eaeaed;
+    }
+    .box {
+      background: #2db34a;
+      height: 80px;
+      position: relative;
+      width: 80px;
+      box-shadow: 10px 10px 5px gray;
+    }
+    .box-1 {
+      left: 10px;
+      top: 10px;
+    }
+    .box-2 {
+      bottom: 10px;
+      left: 70px;
+      z-index: 3;
+    }
+    .box-3 {
+      left: 130px;
+      top: 10px;
+      z-index: 2;
+    }
+    .box-4 {
+      bottom: 10px;
+      left: 190px;
+      z-index: 1;
+    }
+
+    .box-set2 {
+      background: #eaeaed;
+      height: 200px;
+      position: relative;
+    }
+    .box-abs {
+      background: #2db34a;
+      height: 80px;
+      position: absolute;
+      width: 80px;
+      box-shadow: 10px 10px 5px gray;
+    }
+    .box-5 {
+
+    }
+    .box-6 {
+      top: 0;
+      right: -60px;
+    }
+    .box-7 {
+      bottom: -10px;
+      right: 20px;
+    }
+    .box-8 {
+      bottom: 0;
+    }
+
+    .box-fix {
+      background: #2db34a;
+      height: 80px;
+      position: fixed;
+      width: 80px;
+    }
+    .box-9 {
+      top: 6%;
+      left: 2%;
+    }
+    .box-10 {
+      top: 0;
+      right: -40px;
+    }
+    .box-11 {
+      bottom: -10px;
+      right: 20px;
+    }
+    .box-12 {
+      bottom: 0;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="box-set">
+      <figure class="box box-1">Box 1</figure>
+      <figure class="box box-2">Box 2</figure>
+      <figure class="box box-3">Box 3</figure>
+      <figure class="box box-4">Box 4</figure>
+    </div>
+
+    <div class="box-set2">
+      <figure class="box-abs box-5">Box 5</figure>
+      <figure class="box-abs box-6">Box 6</figure>
+      <figure class="box-abs box-7">Box 7</figure>
+      <figure class="box-abs box-8">Box 8</figure>
+    </div>
+
+    <div class="box-set-fixed">
+      <figure class="box-fix box-9">Box 9</figure>
+      <figure class="box-fix box-10">Box 10</figure>
+      <figure class="box-fix box-11">Box 11</figure>
+      <figure class="box-fix box-12">Box 12</figure>
+    </div>
+
+    <div class="box-set">
+      <figure class="box box-1">Box 1</figure>
+      <figure class="box box-2">Box 2</figure>
+      <figure class="box box-3">Box 3</figure>
+      <figure class="box box-4">Box 4</figure>
+    </div>
+  </body>
+</html>

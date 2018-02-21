@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Float Fix</title>
+    <meta charset="UTF-8" />
+    <style>
+    .box-set:before,
+    .box-set:after {
+        content: "";
+        display: table;
+    }
+
+    .box-set::after {
+      clear: both;
+    }
+
+    .box-set {
+      background: #eaeaed;
+    }
+
+    .box {
+      background: #2db34a;
+      box-shadow: 0 15px 20px #ff7b29;
+      float: left;
+      margin: 1.858736059%;
+      width: 29.615861214%;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="box-set">
+      <figure class="box">Box 1</figure>
+      <figure class="box">Box 2</figure>
+      <figure class="box">Box 3</figure>
+    </div>
+  </body>
+</html>
