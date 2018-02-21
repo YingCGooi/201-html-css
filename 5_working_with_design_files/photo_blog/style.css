@@ -1,0 +1,120 @@
+@import url("whitespace-reset.css");
+
+body {
+  font: normal 18px "Roboto Condensed", sans-serif;
+  color: #193441;
+  background-image: linear-gradient(to bottom, #d1dbbd, #fcfff4);
+  background-repeat: repeat-x;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*===========
+   Clearfix
+===========*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*===========
+   Heading
+===========*/
+
+h1 {
+  float: left;
+  font-size: 36px;
+  font-weight: normal;
+  padding: 45px 0 15px 115px;
+  background: transparent url("logo.png") 0 0 no-repeat;
+}
+
+nav {
+  float: right;
+  padding: 75px 0 0 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 40px 14px 40px;
+  color: #91aa9d;
+  text-decoration: none;
+  border-radius: 10px 10px 0 0;
+  background-color: #fcfff5;
+}
+
+nav a.active {
+  color: #fcfff5;
+  background-color: #91aa9d;
+}
+
+header {
+  width: 960px;
+  padding: 20px 20px 0 20px;
+  margin: 0 auto;
+}
+
+/*=========
+   Main
+=========*/
+
+main {
+  width: 960px;
+  padding: 32px;
+  padding-bottom: 48px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #3e606f;
+  box-shadow: 0 5px 5px #b5b5b5;
+}
+
+h2 {
+  margin-top: 45px;
+  margin-bottom: 35px;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 18px;
+  line-height: 23px;
+  padding-bottom: 25px;
+}
+
+article img {
+  margin-left: 35px;
+  float: right;
+}
+
+/*=========
+   Footer
+=========*/
+footer {
+  width: 960px;
+  margin: 16px auto 38px auto;
+}
+
+small {
+  font-size: 14px;
+  line-height: 23px;
+  color: #3e606f;
+}
