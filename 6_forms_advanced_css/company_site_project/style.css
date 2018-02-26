@@ -1,0 +1,221 @@
+@import url("reset.css");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2f2840 url("images/bg_body.gif") repeat;
+  font: normal 20px/28px Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding-top: 132px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#overlay-black {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: black;
+  filter: opacity(0.4);
+}
+
+/*==============
+    Header
+=============*/
+
+h1 {
+  margin-bottom: 120px;
+}
+
+header nav {
+  margin-bottom: 50px;
+}
+
+nav a {
+  color: #cacaca;
+  font-size: 26px;
+  text-transform: uppercase;
+  line-height: 28px;
+}
+
+nav li {
+  display: inline;
+  padding: 0 42px;
+}
+
+.active {
+  color: #6db9ff;
+  font-weight: bold;
+}
+
+/*==============
+      Main
+=============*/
+
+main {
+  width: 100%;
+  background-color: white;
+  padding-top: 120px;
+}
+
+h2 {
+  color: #45494d;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+h2:before, h2:after {
+  padding: 25px;
+  content: "\2022";
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3e59b2;
+  margin-bottom: 16px;
+}
+
+article p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+article {
+  padding-bottom: 117px;
+}
+
+p {
+  color: #45494d;
+}
+
+main img {
+  max-width: 1000px;
+  margin-bottom: 45px;
+}
+
+/*==============
+     Pop Up
+==============*/
+
+#detail {
+  padding-bottom: 140px;
+}
+
+#detail article {
+  text-align: justify;
+  position: relative;
+  max-width: 828px;
+  margin: 0 auto;
+  padding: 122px 74px 108px 84px;
+  background-color: white;
+  z-index: 1;
+}
+
+#detail img {
+  width: 97px;
+  margin: 0 30px 0 0;
+}
+
+#detail figure {
+  width: 100%;
+  margin-bottom: 37px;
+}
+
+#detail figcaption {
+  vertical-align: top;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3e59b2;
+  display: inline-block;
+  line-height: 108px;
+}
+
+#detail button {
+  position: absolute;
+  padding: 0;
+  top: 24px;
+  right: 22px;
+  background: transparent;
+  border: none;
+  width: 29px;
+}
+
+#detail button a {
+  display: block;
+}
+
+#detail button img {
+  width: 100%;
+}
+
+/*==============
+      Footer
+=============*/
+footer {
+  padding: 80px 0 75px 0;
+  height: 300px;
+  background-color: #e7e7e7;
+}
+
+footer p {
+  margin: 0 auto;
+  max-width: 501px;
+  text-align: center;
+  color: #b2b2b2;
+  margin-bottom: 40px;
+}
+
+footer ul {
+  text-align: center;
+}
+
+footer li {
+  padding: 0 60px;
+  display: inline-block;
+}
+
+footer a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+}
+
+.twitter { background-position: 0 0; }
+.facebook { background-position: 0 -46px; }
+.email { background-position: 0 -92px; }
+.instagram { background-position: 0 100%; }
+
+/*=============
+    Members
+=============*/
+#team {
+  padding: 125px 0 113px 0;
+}
+
+#team li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+#team a {
+  font-size: 24px;
+  display: block;
+  color: #3e59b2;
+}
+
+#team img {
+  width: 140px;
+  display: block;
+  margin-bottom: 30px;
+}
