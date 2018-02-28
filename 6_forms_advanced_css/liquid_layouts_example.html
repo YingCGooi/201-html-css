@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Liquid Layout</title>
+  <meta charset="UTF-8" />
+  <style>
+    #content,
+    #sidebar {
+      padding: 20px 30px;
+
+    }
+
+    #content {
+      float: left;
+      width: 70%;
+      box-sizing: border-box;
+    }
+
+    #sidebar {
+      overflow: hidden;
+    }
+
+    main {
+      min-width: 600px;
+      max-width: 1400px;
+    }
+    /* Set a fluid layout by limiting the size of the main div */
+  </style>
+</head>
+<body>
+  <main>
+    <div id="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis convallis est. Nulla ornare tempor scelerisque. Praesent vitae neque luctus, tempus lectus non, venenatis turpis. Vivamus in nisl ac nisl blandit sagittis eu vel diam.
+    </div>
+
+    <div id="sidebar">
+      Duis et ornare tortor. Ut sed iaculis mauris. Ut varius, quam sit amet porta porttitor, dui sem rutrum ante, ut mollis tortor ipsum sit amet risus. In et feugiat sem. Phasellus sit amet pharetra libero, non viverra sem. Vestibulum venenatis velit risus, non eleifend massa pellentesque ut.
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Flexible Grid Example</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <style>
+    body {
+      color: #fff;
+      font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    }
+
+    .container:before,
+    .container:after {
+      content: "";
+      display: table;
+    }
+    .container:after {
+      clear: both;
+    }
+    .container {
+      background: #eaeaed;
+      *zoom: 1;
+    }
+    .container,
+    section,
+    aside {
+      border-radius: 6px;
+    }
+    section,
+    aside {
+      background: #2db34a;
+      margin: 1.858736059%; /*  10px ÷ 538px = .018587361 */
+      padding: 20px 0;
+      text-align: center;
+    }
+    @media all and (min-width: 420px) {
+      .container {
+        max-width: 538px;
+      }
+      section {
+        float: left;
+        width: 63.197026%; /* 340px ÷ 538px = .63197026 */
+      }
+      aside {
+        float: right;
+        width: 29.3680297%;  /* 158px ÷ 538px = .293680297 */
+      }
+    }
+    figure {
+      position: relative;
+      height: 0;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 */
+    }
+    iframe {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section>Section</section>
+    <aside>Aside</aside>
+  </div>
+
+  <figure>
+    <iframe src="https://www.youtube.com/embed/4Fqg43ozz7A"></iframe>
+  </figure>
+</body>
+</html>
