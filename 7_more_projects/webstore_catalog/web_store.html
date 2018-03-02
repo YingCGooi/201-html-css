@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Web Store</title>
+  <meta charset="UTF-8" />
+  <link href="reset.css" rel="stylesheet" />
+  <style>
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font: normal 16px Helvetica, Arial, sans-serif;
+      background-color: #ffd505;
+    }
+
+    header {
+      margin: 0 auto 27px auto;
+      padding: 32px 0;
+      width: 900px;
+      height: 110px;
+      background-color: #047ec1;
+      border-radius: 0 0 13px 13px;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 38px;
+      padding-left: 22px;
+      color: white;
+    }
+
+    h2 {
+      font-size: 32px;
+      padding-bottom: 20px;
+    }
+
+    main {
+      margin: 0 auto;
+      padding: 26px;
+      width: 900px;
+      background-color: #ececec;
+    }
+
+    ul {
+      font-size: 0;
+      margin: 0 -8px;
+    }
+
+    li {
+      display: inline-block;
+      margin: 8px;
+      padding: 16px;
+      width: 200px;
+      background-color: white;
+    }
+
+    label {
+      display: block;
+    }
+
+    dl {
+      font-size: 16px;
+      color: black;
+      text-decoration: none;
+    }
+
+    dt {
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    dd {
+      margin-top: 5px;
+    }
+
+    figure {
+      height: 140px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      display: block;
+      height: 140px;
+      margin: 0 auto;
+    }
+
+    label:hover { cursor: pointer; }
+    label div { display: none; }
+    div img {
+      width: 400px;
+      height: auto;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"]:checked ~ figure img {
+      position: fixed;
+      top: 100px;
+      left: 50%;
+      width: 400px;
+      height: auto;
+      margin: 0 0 0 -200px;
+    }
+
+    input[type="checkbox"]:checked ~ figure:before {
+      content: "";
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0px;
+      bottom: 0px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    input[type="checkbox"]:checked ~ figure .placeholder {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Paramiicio</h1>
+  </header>
+
+  <main>
+    <h2>All Products</h2>
+
+    <ul>
+      <li>
+        <label>
+          <input id="aurelia" type="checkbox"/>
+
+          <figure>
+            <img src="images/aurelia.jpg" alt="Aurelia" />
+          </figure>
+          <dl>
+            <dt>Aurelia</dt>
+            <dd>$12.99</dd>
+          </dl>
+        </label>
+      </li>
+
+      <li>
+        <label>
+          <input id="polycaryum" type="checkbox"/>
+
+          <figure>
+            <img src="images/polycaryum.jpg" alt="Polycaryum" />
+          </figure>
+          <dl>
+            <dt>Polycaryum</dt>
+            <dd>$12.99</dd>
+          </dl>
+        </label>
+      </li>
+
+      <li>
+        <label>
+          <input id="chlorelligerum" type="checkbox" />
+
+          <figure>
+            <img src="ismages/chlorelligerum.jpg" alt="Chlorelligerum"/>
+          </figure>
+          <dl>
+            <dt>Chlorelligerum</dt>
+            <dd>$12.99</dd>
+          </dl>
+        </label>
+      </li>
+
+      <li>
+        <label>
+          <input id="sonneborni" type="checkbox" />
+
+          <figure>
+            <img src="images/sonneborni.jpg" alt="Sonneborni" />
+          </figure>
+          <dl>
+            <dt>Sonneborni</dt>
+            <dd>$12.99</dd>
+          </dl>
+        </label>
+      </li>
+
+      <li>
+        <label>
+          <input id="ugandae" type="checkbox" />
+
+          <figure>
+            <img src="images/ugandae.jpg" alt="Ugandae"/>
+          </figure>
+          <dl>
+            <dt>Ugandae</dt>
+            <dd>$12.99</dd>
+          </dl>
+        </label>
+      </li>
+
+      <li>
+        <label>
+          <input id="woodruffi" type="checkbox" />
+
+          <figure>
+            <img src="images/woodruffi.jpg" alt="Woodruffi" />
+          </figure>
+          <dl>
+            <dt>Woodruffi</dt>
+            <dd>$12.99</dd>
+          </dl>
+        </label>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>

@@ -104,3 +104,4 @@ When an element inherits a value from its parent, it inherits its computed value
 Imagine you had to specify the `font-size` or `font-family` instead of simpy adding it to the `body` element.
 
 IE supports the `inherit` value only from version 8, except for `direction` and `visibility` properties.
+
