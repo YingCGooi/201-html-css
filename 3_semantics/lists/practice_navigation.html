@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Navigation Practice</title>
+  <meta charset="UTF-8" />
+  <style>
+    .navigation ul {
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      font: bold 12px Helvetica, Arial, sans-serif;
+    }
+
+    .navigation li {
+      display: inline-block;
+    }
+
+    .navigation li:last-child a {
+      border-radius: 0 4px 4px 0;
+      border-right: none;
+    }
+
+    .navigation li:first-child a {
+      border-radius: 4px 0 0 4px;
+    }
+
+    .navigation a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 8px 20px;
+      background: linear-gradient(#486E8D, #324C61);
+      border-right: 1px solid rgba(0, 0, 0, .3);
+    }
+
+    .navigation a:hover {
+      background: #314b60;
+      box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navigation">
+    <ul>
+      <li><a href="#">Profile</a></li><!--
+      --><li><a href="#">Settings</a></li><!--
+      --><li><a href="#">Notifications</a></li><!--
+      --><li><a href="#">Logout</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

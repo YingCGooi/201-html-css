@@ -23,19 +23,19 @@
         list-style: none;
       }
 
-/*      header, footer, #column {
+      header, footer, #column {
         position: absolute;
-      }*/
+      }
 
       #column {
-        display: flex;
+        /*display: flex;*/
         min-height: 100vh;
       }
 
       header {
         min-width: 160px;
-        /*height: 100%;*/
-        /*margin-left: -160px;*/
+        height: 100%;
+        margin-left: -160px;
         padding: 15px;
         font-size: 14px;
         background: #2c3e50;
@@ -45,18 +45,19 @@
       footer {
         min-width: 140px;
         padding: 15px;
-        /*height: 100%;*/
-        /*margin-right: -140px;*/
+        height: 100%;
+        margin-right: -140px;
+        right: 0;
         /* effectively becomes 0px width */
         font-size: 12px;
         background: #e74c3c;
         box-sizing: border-box;
       }
 
-/*      #column {
+      #column {
         min-height: 100vh;
         margin: 0 140px 0 160px;
-      }*/
+      }
 
       a:before {
         content: "";

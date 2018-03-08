@@ -1,0 +1,331 @@
+@import url(reset.css);
+
+body {
+  font: normal 16px "Open Sans", Arial, sans-serif;
+  color: #444;
+  height: 3000px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 23px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #007a00;
+}
+
+a {
+  text-decoration: none;
+  color: #008000;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/*=====================
+    Fixed Navigation
+=====================*/
+body > nav a {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 43.5px;
+  color: #444;
+  text-transform: uppercase;
+}
+
+body > nav li {
+  display: inline-block;
+  padding: 0 24.5px;
+}
+
+body > nav {
+  border-top: 10px solid #f5f5f5;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 99;
+}
+
+/*=====================
+        Header
+=====================*/
+header {
+  margin: 55px auto 0 auto;
+  width: 100%;
+  height: 428px;
+  background: url("http://2014.jsconfbr.org/images/front.jpg") 0 0 no-repeat;
+  background-position: 50% 0;
+  text-align: center;
+  color: #fff;
+}
+
+header img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: 150px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5)
+}
+
+h1 {
+  margin-top: -1px;
+  font-size: 72px;
+}
+
+header p {
+  font-size: 31px;
+  text-transform: uppercase;
+}
+
+/*=====================
+        Section
+=====================*/
+section {
+  text-align: center;
+  padding: 60px 0;
+  border-bottom: 1px solid #eee;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  width: 231px;
+  height: 42px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  background-color: #008000;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #006000;
+}
+
+section p {
+  font-weight: 300;
+  line-height: 39px;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1020px;
+}
+
+/*=====================
+        Tickets
+=====================*/
+.tickets {
+  padding-bottom: 70px;
+}
+
+/*=====================
+        Speakers
+=====================*/
+.speakers ul {
+  margin-top: 30px;
+}
+
+.speakers li:hover > .bio {
+  display: block;
+}
+
+.speakers li {
+  position: relative;
+  margin: 5px;
+  display: inline-block;
+  vertical-align: top;
+  width: 282px;
+  height: 380px;
+  border: 1px solid #e8e8e8;
+}
+
+.speakers figure {
+  margin-bottom: 25px;
+}
+
+.speakers p {
+  line-height: 26px;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.bio {
+  display: none;
+  padding: 15px 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.bio p {
+  color: #fff;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 15px;
+}
+
+.bio a {
+  font-weight: bold;
+}
+
+/*=====================
+        Schedule
+=====================*/
+tbody {
+  border-top: 1px solid #eee;
+}
+
+table {
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+td {
+  padding: 11px 0 9px 0;
+  vertical-align: middle;
+}
+
+tr {
+  border-bottom: 1px solid #eee;
+}
+
+td:first-child {
+  padding-left: 10px;
+  text-align: left;
+  width: 90px;
+}
+
+td:nth-child(2) {
+  text-align: left;
+  padding-right: 30px;
+}
+
+.schedule img {
+  display: block;
+  width: 130px;
+  margin: 0 10px 5px 0;
+}
+
+.schedule span {
+  display: block;
+  margin-top: 2px;
+}
+
+.schedule ul {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.schedule li:not(.title) {
+  display: inline-block;
+  font-size: 7px;
+  line-height: 10px;
+  padding: 1px 4px;
+  border: 1px solid #aaa;
+  background-color: #eee;
+  vertical-align: middle;
+}
+
+.schedule li:first-child {
+  display: inline;
+}
+
+li.title {
+  display: inline-block;
+  font-size: 24px;
+  padding-right: 11px;
+  vertical-align: bottom;
+}
+
+.schedule a {
+  font-size: 18px;
+}
+
+/*=====================
+        Location
+=====================*/
+.location p {
+  text-align: left;
+  line-height: 24px;
+}
+
+.location {
+  padding-bottom: 75px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+iframe {
+  margin: 30px -30px 24px -30px;
+  height: 500px;
+  width: 98vw;
+}
+
+/*=====================
+    Call for Papers
+=====================*/
+.call h2 {
+  margin-bottom: 30px;
+}
+
+.call p {
+  text-align: left;
+  line-height: 25px;
+  margin-bottom: 17px;
+}
+
+.call form {
+  text-align: left;
+  margin: -10px 0 10px 0;
+}
+
+.call input[type="submit"] {
+  width: 245px;
+}
+
+/*=====================
+      Sponsors
+=====================*/
+.sponsors h2 {
+  margin-bottom: 30px;
+}
+
+h4 {
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.sponsors li {
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.sponsors ul {
+  text-align: left;
+}

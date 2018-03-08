@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Basic Form Input Elements</title>
+  <meta charset="UTF-8" />
+  </head>
+<body>
+  <form action="#" method="post">
+    <!-- Text Input -->
+    <label>
+      Text Input
+      <input type="text" name="username" required/>
+      <input type="time" name="game-time" />
+      <input type="email" name="email-address" />
+      <input type="url" name="website" />
+      <input type="number" name="cost" />
+      <input type="tel" name="phone-number" />
+    </label>
+
+    <!-- Text Area -->
+    <label>
+      Text Area
+      <textarea name="comment">Add your comment here</textarea>
+    </label>
+
+    <!-- Radio Button -->
+    <label>
+      <input type="radio" name="day" value="Friday" checked /> Friday
+    </label>
+    <label>
+      <input type="radio" name="day" value="Saturday" /> Saturday
+    </label>
+    <label>
+      <input type="radio" name="day" value="Sunday" />
+    Sunday
+    </label>
+
+    <!-- Check Boxes -->
+    <input type="checkbox" name="day" value="Friday" checked /> Friday
+    <input type="checkbox" name="day" value="Saturday" /> Saturday
+    <input type="checkbox" name="day" value="Sunday" /> Sunday
+
+    <!-- Drop-down lists -->
+    <select name="day">
+      <option value="Friday">Friday</option>
+      <option value="Saturday" selected>Saturday</option>
+      <option value="Sunday">Sunday</option>
+    </select>
+
+    <!-- Multiple Selections -->
+    <select name="day" multiple>
+      <option value="Friday" selected>Friday</option>
+      <option value="Saturday">Saturday</option>
+      <option value="Sunday">Sunday</option>
+    </select>
+
+    <!-- Hidden Input -->
+    <input type="hidden" name="tracking-code" value="abc-123" />
+
+    <!-- File Input -->
+    <input type="file" name="file" />
+
+    <input type="submit" name="submit" value="Send" />
+
+    <!-- Button: adding a name attribute will create a name/value pair and they will be sent along to the server -->
+    <button name="hello">Hello Button</button>
+  </form>
+</body>
+</html>

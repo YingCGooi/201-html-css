@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Forms Input Practice</title>
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <form action="#" method="post">
+    <fieldset>
+      <dl>
+        <dt>
+          <label for="email">Email Address</label>
+        </dt>
+        <dd>
+          <input type="email" name="email" id="email" autocomplete="off" autocorrect="off" autocapitalize="none" />
+        </dd>
+
+        <dt>
+          <label for="phone">Phone Number</label>
+        </dt>
+        <dd>
+          <input type="tel" name="phone" id="phone" />
+        </dd>
+      </dl>
+
+      <input type="submit" value="Send" />
+    </fieldset>
+
+    <fieldset>
+      <dl>
+        <dt>
+          <label for="phone_tpye">Phone Type</label>
+        </dt>
+        <dd>
+          <select name="phone_type" id="phone_type">
+            <option value="home">Home</option>
+            <option value="business" selected>Business</option>
+            <option value="mobile">Mobile</option>
+          </select>
+        </dd>
+      </dl>
+    </fieldset>
+  </form>
+
+  <form action="#" method="get">
+    <fieldset>
+      <h2>Categories</h2>
+
+      <ul>
+        <li>
+          <label>
+            <input type="radio" name="category" value="core"/>Core
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input type="radio" name="category" value="plugins"/>Plugins and Libraries
+          </label>
+        </li>
+      </ul>
+
+      <h2>Tags</h2>
+
+      <ul>
+        <li>
+          <label>
+            <input type="checkbox" name="tags" value="html" />HTML
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input type="checkbox" name="tags" value="css" />CSS
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input type="checkbox" name="tags" value="javascript" />
+          Javascript
+          </label>
+        </li>
+      </ul>
+
+      <input type="submit" value="Send" />
+    </fieldset>
+  </form>
+</body>
+</html>

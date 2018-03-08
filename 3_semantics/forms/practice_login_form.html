@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Login Form</title>
+  <meta charset="UTF-8" />
+  <style>
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    form {
+      width: 260px;
+      border: 1px solid #D1D1D6;
+      border-radius: 5px;
+      font: bold 16px/18px Helvetica, Arial, sans-serif;
+    }
+
+    fieldset {
+      border: none;
+      padding: 20px 20px 0 20px;
+      margin: 0;
+    }
+
+    label[for] {
+      display: block;
+      font-weight: bold;
+      color: #40627D;
+    }
+
+    dl, dd {
+      margin: 0;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      height: 38px;
+      width: 100%;
+      border: 1px solid #c6c7cc;
+      border-radius: 5px;
+      padding: 0 6px;
+      font-size: 16px;
+      margin: 6px 0 20px 0;
+      box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .login {
+      border-top: 1px solid #c6c7cc;
+      background-color: #f0f0f2;
+      padding-bottom: 20px;
+    }
+
+    .login input[type="submit"] {
+      cursor: pointer;
+      background: linear-gradient(#49708f, #2a4152);
+      color: #fff;
+      height: 41px;
+      padding: 0 18px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .login label {
+      display: inline-block;
+      font-weight: normal;
+      font-size: 12px;
+      color: #7c7c80;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <dl>
+        <dt><label for="username">Username</label></dt>
+        <dd><input id="username" type="text" name="username" /></dd>
+      </dl>
+
+      <dl>
+        <dt><label for="password">Password</label></dt>
+        <dd><input id="password" type="password" name="password" /></dd>
+      </dl>
+    </fieldset>
+
+    <fieldset class="login">
+      <input type="submit" value="Login" />
+
+      <label>
+        <input type="checkbox" />
+        Stay signed in
+      </label>
+    </fieldset>
+  </form>
+</body>
+</html>

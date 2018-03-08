@@ -4,32 +4,28 @@
     <title>Containing Floats</title>
     <meta charset="UTF-8" />
     <style>
-    #columns {
-      width: 840px;
-      padding: 20px;
-      margin: 0 auto;
-      background: #e0e0e0;
-    }
+      body { background: #e0e0e0; }
 
-    #columns:after {
-      content: "";
-      display: block;
-      clear: both;
-    }
+      #primary, #secondary {
+        padding: 25px;
+        background: yellow;
+        box-sizing: border-box;
+      }
 
-    #primary, #secondary {
-      background: yellow;
-    }
+      #primary {
+        float: right;
+        width: 100%;
+      }
 
-    #primary {
-      float: left;
-      width: 575px;
-    }
+      #secondary {
+        float: left;
+        width: 200px;
+        margin: 0 0 0 -220px;
+      }
 
-    #secondary {
-      float: right;
-      width: 245px;
-    }
+      #columns {
+        margin: 0 0 0 220px;
+      }
     </style>
   </head>
 
